@@ -1,34 +1,32 @@
-import { Films } from '../shared/ListOfFilms'
+import { data } from '../shared/ListOfFilms'
 import { useState } from 'react'
 import React from 'react'
+import { Link } from "react-router-dom";
+import { Icon, CardTitle, Row, Col, Card, Container,Section } from 'react-materialize'
+import "../index.css"
 export default function Films1() {
     const [film, setFilm] = useState([])
     return (
-        <div className='container' >
-            {
-                Films.map((film) => (
-                    <div className='column' key={film.id}>
-                        <div className='card'>
-                            <img src={film.img} alt=''/>
-                            <p className='title'>{film.Title}</p>
-                            <p>{film.Nation}</p>
-                            <p>{film.Year}</p>
-                            {/* <p className='title'></p>
-                            <p className='title'>{film.title}</p> */}
-                            <button className='button' onClick={()=>{setFilm(film)}}><a href='#popup1' id='openPopUp'>Detail</a></button>
-                        </div>
-                    </div>
-                ))}
-                <div id='popup1' className='overlay'>
-                    <div className='popup'>
-                        <img style={{width:'70%'}} src={film.img}></img>
-                        <h2>{film.Title}</h2>
-                        <a className='close' href='#'>&times;</a>
-                        <div className='content'>
-                            {film.info}
-                        </div>
-                    </div>
-                </div>
-        </div>
+        <Section>
+            <Container>
+                <Row>
+                    {
+                        data.map((data) => (<Col key={data.id} m={3} s={12}>
+                            <Card 
+                                closeIcon={<Icon>close</Icon>}
+                                header={<CardTitle image={data.img} reveal waves='light' />}
+                                reveal={<p>{data.info}</p>}
+                                revealIcon={<Icon>more_vert</Icon>}
+                                title={data.Title}
+                            >
+                                <Link to={`detail/${data.id}`}>Detail</Link>
+                            </Card>
+                        </Col>))
+                    }
+                </Row>
+            </Container>
+        </Section>
+
+
     )
 }

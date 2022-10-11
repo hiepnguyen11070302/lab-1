@@ -1,84 +1,144 @@
 .App {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-image img {
+  width: 200px;
+}
+/*
+.footer > p {
+  margin: 1.5rem;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card {
+  background-color: #1a1a1a;
+  transition: all 1s ease-in-out;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
+}
+
+p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
- opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-.popup {
-  margin: 70px auto;
-  padding: 5px;
-  background: rgb(211,211,211);
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-.popup img{ width: 100%;}
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
+.bold {
   font-weight: bold;
+}
+
+button {
+  background-color: black;
+  width: 100%;
+  height: 20%;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+#openPopUp {
+  color: white;
   text-decoration: none;
-  color: #333;
+  font-size: 14px;
 }
-.popup .close:hover {color: #06D85F;}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+
+.column-detail {
+display: flex;
+column-count: 2;
+margin: 0;
+padding: 25px auto;
 }
+
+.product-card {
+  position: relative;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.428571429;
+  color: #bbb;
+  font-size: 18px;
+  font-family: 'Sen', sans-serif;
+  background-color: #1a1a1a;
+}
+
+.product-tumb {
+  margin: 0;
+  padding: 30px 40px;
+}
+
+.product-tumb img {
+  width: 300px;
+  border-radius: 30px;
+}
+
+
+
+.product-card {
+  padding-top: 70px;
+  padding-left: 70px;
+  align-items: center;
+  text-align: left;
+}
+
+.product-card p {
+  padding: 10px;
+}
+
+.product-card button {
+  width: 100px;
+  height: 40px;
+}
+
+.product-card .Buy-ticket {
+  background-color: rgb(255, 138, 0);
+  margin-right: 10px;
+}
+
+.product-card .Buy-ticket:hover {
+  background-color: rgb(206, 233, 0);
+}
+
+.product-card .watch{
+  background-color: rgb(255, 1, 0);
+}
+
+.product-card .watch:hover {
+  background-color: rgb(229, 1, 0);
+}
+
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+} */
