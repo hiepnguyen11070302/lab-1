@@ -1,3 +1,4 @@
+
 import React from "react";
 export default function ModalCase({setIsOpen, film}) {
     return (
@@ -17,7 +18,7 @@ export default function ModalCase({setIsOpen, film}) {
                     </p>
                 </div>
                 <div className="modal-footer">
-                    <a className="modal-close red-text">Close</a>
+                    <a className="modal-close red-text"><i class="small material-icons">close</i></a>
                 </div>
             </div>
         </div>

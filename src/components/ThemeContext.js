@@ -33,8 +33,7 @@ function ThemeProvider({ children }) {
   }
   const theme = dark ? themes.dark : themes.light
   return (
-    <ThemeContext.Provider value={{ theme, dark, toggle }}>
-      {children}
+    <ThemeContext.Provider value={{ theme, dark, toggle }}>{children}
     </ThemeContext.Provider>
   )
 }

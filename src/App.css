@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  /* font-weight: 250;
+  font-size: 12px;
+  line-height: 30px; */
+  color: #777;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
 * {
   margin: 0;
   padding: 0;
@@ -24,9 +37,16 @@
   transform: translate(-50%, -50%);
   position: absolute;
 }
+.modal-content {
+  display: block;
+}
+.modal-content a {
+  align-items: end;
+}
 
-.card-image img {
+img {
   width: 200px;
+  height: 26em;
 }
 /*
 .footer > p {

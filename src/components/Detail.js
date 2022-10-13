@@ -18,7 +18,7 @@ export default function Detail() {
                     <Col m={12} s={12}>
                         <Card >
                             <div className="card-image">
-                                <img src={`../${film.img}`} alt={film.img}/>
+                                <img src={`../${film.img}`} alt={film.img} style={{width:"100%",height:"500px"}}/>
                                 <span className="card-title">{film.name}</span>
                                 <a onClick={() => setIsOpen(true)} className="btn-floating halfway-fab">
                                     <Icon large>ondemand_video</Icon>

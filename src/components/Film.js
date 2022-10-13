@@ -8,10 +8,10 @@ export default function Films1() {
     const [film, setFilm] = useState([])
     return (
         <Section>
-            <Container>
+            <Container maxWidth = "sm">
                 <Row>
-                    {
-                        data.map((data) => (<Col key={data.id} m={3} s={12}>
+                    {data.map((data) => (
+                        <Col key={data.id} m={3} s={12}>
                             <Card 
                                 closeIcon={<Icon>close</Icon>}
                                 header={<CardTitle image={data.img} reveal waves='light' />}
