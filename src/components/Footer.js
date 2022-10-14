@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 export default class Footer extends Component {
     render() {
         return (
-            <footer class="page-footer">
+            <footer className="page-footer" style={{background:'black'}}>
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">
